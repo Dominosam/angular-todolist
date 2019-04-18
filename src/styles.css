@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.container {
+    padding: 0px;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    padding: 7px 20px;
+    cursor: pointer;
+    background: #555;
+    color: #fff;
+}
+
+.btn:hover {
+    background: #666;
+}
