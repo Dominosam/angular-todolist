@@ -1,3 +1,5 @@
+
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -7,6 +9,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.4;
+    height: 100%;
+    margin: 0px;
 }
 
 a {
@@ -30,3 +34,5 @@ a {
 .btn:hover {
     background: #666;
 }
+
+html, body { height: 100%; }

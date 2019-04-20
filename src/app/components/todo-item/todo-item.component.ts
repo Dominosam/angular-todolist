@@ -10,6 +10,7 @@ import { TodoService } from '../../services/todo.service'
 export class TodoItemComponent implements OnInit {
 
   @Input ()todo: Todo; 
+  @Output() deleteTodo: EventEmitter<Todo> = new EventEmitter();
 
   constructor(private todoService:TodoService) { }
 
@@ -33,7 +34,8 @@ export class TodoItemComponent implements OnInit {
   }
 
   onDelete(todo){
-    console.log(todo.id + ' deleted');
+    this.deleteTodo.emit(todo);
+    //console.log(todo.id + ' deleted');
   }
 
 }
